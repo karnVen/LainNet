@@ -1,0 +1,16 @@
+# OS and System Files
+*.Zone.Identifier
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary files & swap
+*~
+*.swp
+*.swo
+*.tmp
+
+# Obsidian cache (optional workspace settings)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
