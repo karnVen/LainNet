@@ -42,7 +42,7 @@ graph TD
 
 ## 📍 Where We Are Right Now (Active Sprint)
 
-> **Last Push Status:** October 13, 2026 | **Episodes Mastered:** 5 / 24  
+> **Last Push Status:** October 14, 2026 | **Episodes Mastered:** 5 / 24  
 > **Course Track:** [NetworkChuck Free CCNA (200-301) Course](https://youtube.com/playlist?list=PLIhvC56v63IJVXv0GJcl9vO5Z6znCVb1P)  
 > **Companion Agent:** AI-bou (Antigravity)
 
@@ -52,7 +52,7 @@ graph TD
 | **01** | [[01 - What is a SWITCH -- FREE CCNA -- Day 1\|What is a SWITCH? // FREE CCNA // Day 1]] | `labs/ccna_day1.pkz` | 3 Switch Rules (Learn, Forward, Flood), CAM table aging, `macof` flooding defense | ✅ **Mastered** |
 | **02** | [[02 - What is a ROUTER -- FREE CCNA -- EP 2\|What is a ROUTER? // FREE CCNA // EP 2]] | `labs/ccna_ep2.pkz` | Broadcast domain isolation, Default Gateway logic, Hop-by-Hop MAC address rewrite | ✅ **Mastered** |
 | **03** | [[03 - what is TCPIP and OSI -- FREE CCNA -- EP 3\|what is TCP/IP and OSI? // FREE CCNA // EP 3]] | `attachments/arpanet-logical-map-1977.png`<br/>`attachments/networkchuck-osi-vs-tcpip-blackboard.png` | 1969 ARPANET history, OSI 7-Layer vs TCP/IP 5-Layer, Official Boson Practice FAQ | ✅ **Mastered** |
-| **04** | [[04 - REAL LIFE example (TCPIP and OSI layers) -- FREE CCNA -- EP 4\|REAL LIFE example!! (TCP/IP and OSI layers) // FREE CCNA // EP 4]] | Simulation Mode Packet Flow | End-to-end Coffee Shop request flow, PDU transformations, TCP 3-way handshake FAQ | ✅ **Mastered** |
+| **04** | [[04 - REAL LIFE example (TCPIP and OSI layers) -- FREE CCNA -- EP 4\|REAL LIFE example!! (TCP/IP and OSI layers) // FREE CCNA // EP 4]] | `attachments/ep04-pt-event-list-filter.png`<br/>`attachments/ep04-nc-blackboard-l4-tcp-segment.png`<br/>`attachments/ep04-nc-blackboard-l3-ip-packet.png`<br/>`attachments/ep04-pt-pdu-johnny-out-layers.png` | Live Packet Tracer Simulation, Web traffic filtering (ARP/DNS/TCP/HTTPS), Live PDU inspection (Johnny -> Gateway MAC), Boson Practice FAQ | ✅ **Mastered** |
 | **05** | [[05 - How the OSI model works on YouTube -- FREE CCNA -- EP 5\|How the OSI model works on YouTube // FREE CCNA // EP 5]] | Transport Layer Lab | TCP vs UDP, Socket Pairs (`IP:Port`), Streaming buffer mechanics | ⏳ **UP NEXT** |
 | **06** | [[06 - DO NOT design your network like this -- FREE CCNA -- EP 6\|DO NOT design your network like this!! // FREE CCNA // EP 6]] | 3-Tier Enterprise Lab | Core, Distribution, Access layers, Redundant loops & Spanning Tree | ⚪ Scheduled |
 
@@ -82,9 +82,9 @@ This repository contains real Cisco Packet Tracer lab files (`.pkz`) paired dire
   - Simulation Mode inspection of ARP broadcasts and unicast packet delivery.
   - Cisco IOS CLI verification: `show mac address-table`, `clear mac address-table dynamic`.
 - **`labs/ccna_ep2.pkz`**:
-  - The "NetworkChuck Coffee" multi-subnet infrastructure.
-  - Cross-subnet routing through interface `G0/0` (`192.168.1.1`) and `G0/1` (`172.16.1.1`).
-  - Resolving remote web servers (`172.16.1.100`) and testing default gateway dependencies.
+  - The "NetworkChuck Coffee" multi-subnet infrastructure (Laptop "Johnny" & "Lisa", 2911 Router, Coffee Server).
+  - Event list filtering: isolating `ARP, DNS, HTTP, HTTPS, ICMP`.
+  - PDU Inspection: live verification of Layer 7 down to Layer 1 encapsulation and the router gateway MAC hop.
 
 ---
 
